@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         pcg_paper.css
+   Supporting Files: 
+
+*/
+html {
+    background-color: rgb(221, 178, 115);
+}
+nav > ul {
+    list-style-type: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+nav > ul > li > a:visited, nav > ul > li > a:link {
+    text-decoration: none;
+    color: rgb(43,59,125);
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color: rgb(212,35,35);
+}
+
+body {
+    width: 100%;
+    min-width: 640px;
+    max-width: 1020px;
+    font-family: 'Century Gothic',serif;
+    margin: 0 auto;
+    background-color: rgb(230, 200, 155);
+    box-shadow:rgb(40, 34, 34) 10px 0 20px, rgb(40,34,34) -10px 0 20px;
+}
+body > header{
+    width:100%;
+}
+header > img{
+   display:block;
+   width:100%;
+}
+section{
+    width:50%;
+    position:absolute;
+    right:300px;
+    top:250px;
+    bottom:0;
+    height:100%;
+}
+#leftColumn {
+    width:24%;
+    float:left;
+    margin-right:2%;
+}
+
+nav li{
+    list-style-type:none;
+}
+aside#stories_inside {
+    display: block;
+    float: right;
+    width: 20%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 930px;
+    text-align: center;
+    background-color: black;
+    font-size: 1.3em;
+    height:100%;
+}
+aside#stories_inside a{
+    text-decoration:none;
+    color:white;
+}
+    aside#stories_inside h2 {
+        font-size: 1em;
+        color:white;
+        display:block;
+        float:right;
+        margin:0 auto;
+       padding:10px 35px;
+    }
+
+    aside#stories_inside li {
+        line-height: 50px;
+        display: block;
+        width: 100%;
+    }
+    aside#stories_inside ul{
+        margin:0 auto;
+        padding-right:25px;
+    }
+
+nav.sideMenu {
+    float: left;
+    display: block;
+    width: 20%;
+    padding-top:2%;
+    padding-right:2%;
+    padding-bottom:930px;
+    font-size:1.3em;
+    text-align:center;
+    background-color:black;
+}
+nav.sideMenu div{
+    padding-bottom:5px;
+}
+nav.sideMenu li{
+    display:block;
+    width:100%;
+    line-height:50px;
+}
+nav.sideMenu a{
+    text-decoration:none;
+    color:white;
+}
+nav.sidemenu ul li a:link, nav.sidemenu ul li a:visited {
+    color:red;
+}
+
+nav.sidemenu > ul > li > a:hover, nav.sidemenu > ul > li > a:active {
+    color:red;
+}
+article {
+    float: left;
+    width: 50%;
+    margin: 0 2%;
+}
+article h1{
+    font-size:2.2em;
+}
+    article p {
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
+article figure{
+    float:right;
+    text-align:center;
+}
+figure img{
+    border-radius:50%;
+}
+footer {
+    background-color:black;
+    width: 100%;
+    text-align: center;
+    color:white;
+    clear:left;
+    padding:10px 0;
+}
+address {
+    font: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
